@@ -1,17 +1,92 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-<title> All About Me</title>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheet.css"
+      media="screen"
+    />
+    <title>Praticing Portfolio</title>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="https://test.com"><li>Home</li> </a>
+          <a href="https://test.com"><li>About Me</li> </a>
+          <a href="https://test.com"><li>Projects</li> </a>
+          <a href="https://test.com"><li>Contact US</li> </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>About me</h1>
+        <section>
+          <p>
+            "I'm a 30-year-old man. I have two children, and I live with them
+            and my wife. I live in São Paulo, Brazil, and I recently restarted
+            practicing to change my career to the development field."
+          </p>
+        </section>
+      </article>
+    </main>
 
-
-<body>
-
-<h1> About me</h1>
-<p>"I'm a 30-year-old man. I have two children, and I live with them and my wife. I live in São Paulo, Brazil, and I recently restarted practicing to change my career to the development field."</p>
-
-</body>
-
+    <footer>
+      <div class="falecom"><h1> Fale Conosco</h1></div>
+      <div>
+        
+        <form class="form" method="post" action="recebe.php">
+          <label for="nome"
+            >Nome
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Somente Letras"
+              required
+          /></label>
+          <label for="sobrenome"
+            >Sobrenome<input
+              type="text"
+              id="sobrenome"
+              name="sobrenome"
+              placeholder="Somente Letras"
+              required
+          /></label>
+          <label for="fone"
+            >Celular com DDD<input
+              type="tel"
+              id="fone"
+              name="fone"
+              placeholder="11 99999999"
+          /></label>
+          <label for="email"
+            >E-mail<input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemplo@gmail.com"
+              required
+          /></label>
+          <label for="msg"
+            >Sua Mensagem para Nós<textarea
+              name="msg"
+              id="msg"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+          </label>
+          <input class="button"  type="reset" value="Reset" />
+          <input class="button" type="submit" value="Enviar" />
+        </form>
+      </div>
+      <p>© 2025 Marcio D. Todos Direitos Reservados</p>
+    </footer>
+  </body>
 </html>

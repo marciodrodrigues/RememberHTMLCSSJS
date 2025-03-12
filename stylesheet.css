@@ -1,12 +1,66 @@
-body{
-    background-color: gray;
-    margin: 0;
-    padding: 0;
+:root {
+  --cinza-claro: rgb(245, 245, 245);
+  --cinza: rgb(219, 219, 219);
+  --cinza-escuro: rgb(184, 184, 184);
+  --preto-35: #00000035;
+  --azulado: #112e61;
 }
-h1{
-    border: 2px solid black;
-    font-style: oblique;
+* {
+  margin: 0;
+  padding: 0;
 }
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  background-color: var(--cinza-claro);
+}
+article {
+  min-height: 94vh;
+  text-align: center;
+}
+section {
+  margin-top: 100px;
+  font-size: 30px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--cinza);
+  padding: 15px 30px;
+  box-shadow: 0 0 5px var(--preto-35);
+  height: 4vh;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  a {
+    color: var(--azulado);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+footer {
+  background-color: var(--cinza-escuro);
+  text-align: center;
+}
+
+form {
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
 }
